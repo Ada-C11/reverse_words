@@ -1,6 +1,6 @@
 # A method to reverse each word in a sentence, in place.
 # Time complexity: O(n + m/2) where n is the length of sentence and m is length of words.
-#                        --> O(n). 
+#                        --> O(n).  
 # Space complexity: O(1)
 
 def reverse_words(my_words)
