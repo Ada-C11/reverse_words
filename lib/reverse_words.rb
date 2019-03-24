@@ -1,10 +1,9 @@
 # A method to reverse each word in a sentence, in place.
 # Time complexity: O(n + m/2) --> O(n) where n is the length of sentence and m is length of all words excluding spaces.
-#
 # Space complexity: O(1)
 
 def reverse_words(my_words)
-  return nil if !my_words
+  return if !my_words
   left = 0
   my_words_length = my_words.length
   my_words_length.times do |i|
