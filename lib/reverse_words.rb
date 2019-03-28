@@ -1,8 +1,8 @@
 # A method to reverse each word in a sentence, in place.
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: O(n), where n is length of my_words
+# Space complexity: Optimized O(1), same amount of space each loop
 def reverse_words(my_words)
-  return nil if !my_words
+  return if !my_words
   return my_words if my_words.length == 1
   i, j = 0, 0 
   while i < my_words.length
@@ -14,6 +14,7 @@ def reverse_words(my_words)
     end
     i = j + 1
   end
+  return my_words
 end
 
 def reverse_string(my_words, starting, ending)
@@ -25,4 +26,5 @@ def reverse_string(my_words, starting, ending)
     starting += 1
     ending -= 1
   end
+  return my_words
 end
