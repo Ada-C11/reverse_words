@@ -1,7 +1,7 @@
 require 'pry'
 # A method to reverse each word in a sentence, in place.
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: On
+# Space complexity: On
 def reverse_words(my_words)
   return my_words if my_words == nil || my_words.length == 0
   
@@ -39,3 +39,11 @@ def reverse_words(my_words)
   end
   return str
 end 
+
+
+
+# test_string =  reverse_words("Engineer")
+# another_string = reverse_words("   evol  ")
+
+# p test_string
+# p another_string
