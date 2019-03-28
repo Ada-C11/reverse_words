@@ -1,6 +1,7 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/reverse_words'
+require "minitest/autorun"
+require "minitest/reporters"
+require "minitest/skip_dsl"
+require_relative "../lib/reverse_words"
 
 describe "reverse words" do
   describe "basic tests" do
