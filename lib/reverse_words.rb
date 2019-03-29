@@ -1,49 +1,31 @@
 require 'pry'
 # A method to reverse each word in a sentence, in place.
-# Time complexity: On
-# Space complexity: On
+# Time complexity: On - linear
+# Space complexity: O - no additional space taken up, temporary values to move things around. 
 def reverse_words(my_words)
   return my_words if my_words == nil || my_words.length == 0
   
-  #helper method
-  def reverse_it(string)
-    n = string.length - 1
-    reversed_word = ""
-    while n >= 0
-     reversed_word += string[n]
-     n-= 1
+  i = 0
+  l = my_words.length
+  start = 0
+  finish = 0
+  
+  while i < l 
+    while my_words[i] == " "
+      i += 1
     end
-    return reversed_word
-  end
-
-  a = 0
-  z = my_words.length - 1
-   str = ""
-   temp = ""
-
-  while a <= z
-    if my_words[a] == " "
-      str += my_words[a]
-    elsif my_words.length < 2
-      return my_words
-    else
-      while my_words[a] != " " && my_words[a] != nil
-        temp += my_words[a]
-        a += 1
-      end 
-      a -= 1
-      str += reverse_it(temp)
-      temp = ""
+    start = i
+    while my_words[i] != " " && i < l
+      i += 1 
     end
-    a += 1
+    finish = (i -1) 
+    while start < finish
+        temp = my_words[start]
+        my_words[start] = my_words[finish]
+        my_words[finish] = temp
+        start += 1
+        finish -= 1
+    end
   end
-  return str
+  return my_words
 end 
-
-
-
-# test_string =  reverse_words("Engineer")
-# another_string = reverse_words("   evol  ")
-
-# p test_string
-# p another_string
