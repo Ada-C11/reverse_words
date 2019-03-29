@@ -2,6 +2,7 @@ require "pry"
 # A method to reverse each word in a sentence, in place.
 # Time complexity: O(n) where n is the length of the string.
 # While there is one layer of loop nesting, both loops use the same iterator, index.
+# The calls to string_reverse add at most 1/2 n more iterations, so the time complexity still remains O(n)
 # Space complexity: O(1). The method uses constant time because it mutates the string in place.
 def reverse_words(my_words)
   # check that my_words is not nil
