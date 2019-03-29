@@ -23,7 +23,7 @@ def reverse_words(my_words)
 
     word = my_words[word_start..word_end]
     # binding.pry
-    word.string_reverse
+    string_reverse(word)
     i = word_end + 1
     # binding.pry
   end
