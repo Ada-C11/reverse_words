@@ -5,16 +5,17 @@ def reverse_words(my_words)
   if my_words.nil?
     return nil
   end
+
   i = 0
   j = 0
   while j < my_words.length
-    if my_words[i] == ' '
+    if my_words[i] == " "
       i += 1
       j = i
       next
     end
 
-    while j < my_words.length && my_words[j] != ' '
+    while j < my_words.length && my_words[j] != " "
       j += 1
     end
 
@@ -30,5 +31,5 @@ def reverse(s, low, high)
     s[high] = temp
     low += 1
     high -= 1
-  end 
+  end
 end
