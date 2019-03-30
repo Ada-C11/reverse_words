@@ -4,7 +4,7 @@
 def reverse_words(my_words)
   i = 0
   j = 0
-  while !my_words.nil? && j <= my_words.length
+  while my_words && j <= my_words.length
     if my_words[j] == ' ' || j == my_words.length
       little_end = i
       big_end = j - 1
