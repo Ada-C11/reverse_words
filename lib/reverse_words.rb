@@ -1,3 +1,6 @@
+# Time Complexity: O(n) because there is a constant ratio (3n/2) to the size of the input array.
+# Space Complexity: O(1) because no additional memory is needed regardless of input array.
+
 def reverse_words(my_words)
   i = 0
   j = 0
