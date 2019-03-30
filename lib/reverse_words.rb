@@ -10,11 +10,13 @@ def reverse_words(my_words)
   i = 0
 
   while i < my_words.length
-    until i != " "
+    # finding the first character of a word
+    until my_words[i] != " "
       i += 1
     end
     word_start = i
-    until i == " " || i == my_words.length
+    # finding the last character of a word
+    until my_words[i] == " " || i == my_words.length
       i += 1
       # binding.pry
     end
@@ -30,10 +32,10 @@ def reverse_words(my_words)
 end
 
 def string_reverse(word)
-  return word if word == nil
+  # return word if word == nil
 
   i = 0
-  j = word.length - 1
+  j = (word.length - 1)
 
   while i < j
     temp = word[i]
