@@ -1,6 +1,8 @@
-require 'minitest/autorun'
-require 'minitest/reporters'
-require_relative '../lib/reverse_words'
+gem "minitest", ">= 5.0.0"
+require "minitest/autorun"
+require "minitest/reporters"
+require "minitest/pride"
+require_relative "../lib/reverse_words"
 
 describe "reverse words" do
   describe "basic tests" do
