@@ -23,7 +23,6 @@ def reverse_words(my_words)
           k -= 1
         end
         reverse += new_string
-        # reverse += new_string + my_words[i]
       end
       new_string = ""
     elsif i == my_words.length - 1 && my_words[i] != " "
