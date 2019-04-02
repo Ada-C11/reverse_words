@@ -19,9 +19,6 @@ def reverse_words(my_words)
   if (last_index - first_index) > 1
     i = first_index
     j = last_index - 1
-    if j == my_words.length
-      j = string_last
-    end
     while i < j
       temp = my_words[i]
       my_words[i] = my_words[j]
@@ -42,9 +39,6 @@ def reverse_words(my_words)
     if (last_index - first_index) > 1
       i = first_index
       j = last_index - 1
-      if j == my_words.length
-        j = string_last
-      end
       while i < j
         temp = my_words[i]
         my_words[i] = my_words[j]
