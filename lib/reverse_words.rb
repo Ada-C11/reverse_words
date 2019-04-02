@@ -1,7 +1,7 @@
 # A method to reverse each word in a sentence, in place.
-# Time complexity: ?
-# Space complexity: ?
-require "pry"
+# Time complexity: O(n) where n is the length of the string. The code loops through every index of the string.
+# Space complexity: O(1) because no matter the length of the string, the following variables will constantly take up space:
+# my_words, first_index, last_index, string_last, i, j, temp
 
 def reverse_words(my_words)
   if my_words == nil
