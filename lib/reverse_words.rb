@@ -1,3 +1,7 @@
+# A method to reverse each word in a sentence, in place.
+# Time complexity: O(n) - Linear with n being the number of characters
+# Space complexity: O(1)
+
 def reverse(word)
   length = word.length
   (length / 2).round.times do |i|
